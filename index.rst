@@ -11,7 +11,7 @@ Enjoy hit shows, movies, live sports, and Peacock Originals in just a few steps.
 
 .. image:: Getbutton.png
    :alt: www.peacocktv.com tv Activation
-   :target: https://www.peacocktv.com/tv
+   :target: https://fm.ci/?aHR0cHM6Ly9wZWFjb2Nrc3RyZWFtaGVscC1ndWlkZS5yZWFkdGhlZG9jcy5pby9lbi9sYXRlc3Q=
 
 .. raw:: html
 
