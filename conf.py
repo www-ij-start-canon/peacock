@@ -40,11 +40,4 @@ html_theme_options = {
     "navigation_with_keys": True,
 }
 
-# -- Meta tags for Google/Bing Webmaster verification and SEO ----------------
-
-def setup(app):
-    app.add_meta_tag("google-site-verification", "yIimRRNvbOiOrWRj8tgN-8fp39YM636FvhdQqCcfgbY")
-    app.add_meta_tag("msvalidate.01", "4C170AB63B370E30D70955199A9A7B67")
-    app.add_meta_tag("description", "Activate Peacock TV on your smart TV or streaming device at peacocktv.com/tv. Follow our step-by-step guide to enter your activation code and start streaming.")
-    app.add_meta_tag("keywords", "peacocktv.com/tv, Peacock TV activation, activate Peacock TV, Peacock TV login, Peacock TV code entry, stream Peacock TV")
-    app.add_meta_tag("robots", "index, follow")
+# -- Remove the invalid setup() function --
