@@ -2,7 +2,12 @@
 
 import os
 import sys
-sys.path.insert(0, os.path.abspath('.'))
+
+# -- Path setup --------------------------------------------------------------
+
+# If extensions or modules to document with autodoc are in another directory,
+# add these directories to sys.path here.
+# Example: sys.path.insert(0, os.path.abspath('../src'))
 
 # -- Project information -----------------------------------------------------
 
@@ -13,25 +18,34 @@ author = 'www.peacocktv.com tv'
 # The full version, including alpha/beta/rc tags
 release = '1.0.0'
 
-# -- General configuration ---------------------------------------------------
-
-extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.viewcode',
-    'sphinx.ext.githubpages'  # Optional: enables .nojekyll on GitHub Pages
-]
-
-templates_path = ['_templates']
-html_static_path = ['_static']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
 # -- HTML output settings ----------------------------------------------------
 
+# Title shown in the browser tab and top of HTML pages
 html_title = "WWW.PeacockTV.com tv – Activate Peacock TV on Your Device"
-html_short_title = "Peacock TV Activation"
+
+# Optional short title (e.g., for nav bar)
+html_short_title = "www.peacocktv.com tv"
+
+# Favicon (place favicon.ico in the root or _static folder)
 html_favicon = 'favicon.ico'
+
+# Choose a theme (uncomment if needed)
+# html_theme = 'sphinx_rtd_theme'
+
+# Hide "View page source"
 html_show_sourcelink = False
+
+# Allow raw HTML blocks in .rst files
 html_allow_unsafe = True
 
-# Theme settings removed to use default Sphinx or Read the Docs theme
-# You may still override style using _static/custom.css if needed
+# Theme customization options
+html_theme_options = {
+    'show_powered_by': False,
+}
+
+# Paths to templates and static files
+templates_path = ['_templates']
+# html_static_path = ['_static']  # Uncomment if you have static assets
+
+# Patterns to ignore when looking for source files
+# exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
