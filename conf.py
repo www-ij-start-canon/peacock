@@ -13,39 +13,38 @@ author = 'Peacock TV, NBCUniversal Media, LLC'
 # The full version, including alpha/beta/rc tags
 release = '1.0.0'
 
+# -- General configuration ---------------------------------------------------
+
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.githubpages'  # Optional: enables .nojekyll on GitHub Pages
+]
+
+templates_path = ['_templates']
+html_static_path = ['_static']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+
 # -- HTML output settings ----------------------------------------------------
 
-# Title shown in the browser tab and top of HTML pages
-html_title = "PeacockTV.com/tv – Activate Peacock TV on Your Device"
-
-# Optional short title (e.g., for nav bar)
-html_short_title = "Peacock TV Activation"
-
-# Favicon (must be placed inside _static or root directory)
-html_favicon = 'favicon.ico'
-
-# Theme (use Furo or uncomment another theme like ReadTheDocs if needed)
 html_theme = 'furo'
-
-# Hide "View page source" links
+html_title = "WWW.PeacockTV.com tv – Activate Peacock TV on Your Device"
+html_short_title = "Peacock TV Activation"
+html_favicon = 'favicon.ico'
 html_show_sourcelink = False
-
-# Allow raw HTML in .rst files
 html_allow_unsafe = True
 
-# Theme customization options
 html_theme_options = {
     'show_powered_by': False,
     "sidebar_hide_name": True,
     "navigation_with_keys": True,
 }
 
-# Paths to templates and static files
-templates_path = ['_templates']
-html_static_path = ['_static']
+# -- Meta tags for Google/Bing Webmaster verification and SEO ----------------
 
-# Add extra files like Google verification HTML if needed
-# html_extra_path = ['google12345abcde.html']
-
-# Files or directories to ignore when looking for source files
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+def setup(app):
+    app.add_meta_tag("google-site-verification", "yIimRRNvbOiOrWRj8tgN-8fp39YM636FvhdQqCcfgbY")
+    app.add_meta_tag("msvalidate.01", "4C170AB63B370E30D70955199A9A7B67")
+    app.add_meta_tag("description", "Activate Peacock TV on your smart TV or streaming device at peacocktv.com/tv. Follow our step-by-step guide to enter your activation code and start streaming.")
+    app.add_meta_tag("keywords", "peacocktv.com/tv, Peacock TV activation, activate Peacock TV, Peacock TV login, Peacock TV code entry, stream Peacock TV")
+    app.add_meta_tag("robots", "index, follow")
